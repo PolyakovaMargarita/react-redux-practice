@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+html, body {
+  background-color: rgb(202, 252, 235);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
+  height: 280px;
+  width: 480px;
+  margin-top: 150px;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: aquamarine;
+  border-radius: 30px;
+  border: 4px solid rgb(12, 34, 231);
+}
+.cash {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 56px;
+  height: 25%;
+  width: 100%;
+  color: rgb(12, 34, 231);
 }
-
-.App-link {
-  color: #61dafb;
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 30%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  background-color: aqua;
+  color: rgb(12, 34, 231);
+  border-radius: 30%;
+  font-size: 22px;
+  border: 3px solid rgb(12, 34, 231);
+  width: 45%;
+  height: 70%;
+}
+.buttonCustomer {
+  background-color: rgb(47, 255, 0);
+  color: rgb(9, 22, 136);
+  border-radius: 30%;
+  font-size: 22px;
+  border: 3px solid rgb(9, 22, 136);
+  width: 45%;
+  height: 70%;
+}
+.customers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 200px;
+  width: 480px;
+  border-radius: 10%;
+  font-size: 22px;
+  background-color: rgb(0, 255, 17);
+  color: rgb(9, 22, 136);
+  border: 3px solid rgb(9, 22, 136);
+}
+.customer{
+  border: 1px solid rgb(9, 22, 136);
+  width: 90%;
+  text-align: center;
+  margin: 5px;
+  border-radius: 40%;
+}
+.customersEmpty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 480px;
+  border-radius: 30%;
+  font-size: 22px;
+  background-color: rgb(0, 255, 17);
+  color: rgb(9, 22, 136);
+  border: 3px solid rgb(9, 22, 136);
 }
